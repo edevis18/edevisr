@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta name="description" content="Card de Presentación Profesional de Edevis Raga.">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 2050 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Perfil Edevis Raga</title>
+</head>
+<body>
+    <div class="card">
+        <img src="img/foto.jpg" alt="Edevis Raga" class="profile-picture">
+        <h1>@edevisr <i class="fa fa-check-circle" aria-hidden="true" style="color:#49adf4; font-size: 12px; " ></i> </h1>
+        <p>🚀 Marketing, 📲 Gráfico y Web</p>
+        <p><b>Mis Servicios</b></p>
+        <div class="buttons">
+            <a href="https://www.behance.net/edevis18a165?log_shim_removal=1"> <i class="fas fa-image"></i> Portafolio Gráfico </a>
+            <a href="https://i-ntely.tech/edevisraga/portafolio-web.html"> <i class="fas fa-globe"></i> Portafolio Web </a>
+            <a href="https://soundcloud.com/edevis"> <i class="fas fa-headphones"></i> Portafolio de Audio Profesional </a>
+            <a href="https://wa.me/5804246538309"> <i class="fas fa-share-alt"></i> Publicidad en Redes Sociales </a>
+            <a href="https://wa.me/5804246538309"> <i class="fas fa-broadcast-tower"></i> Anuncios en Radio FM </a>
+            <a href="https://wa.me/5804246538309"> <i class="fas fa-newspaper"></i> Servicio Nota de Prensa </a>
+        </div> <br>
+
+    <a href="" id="shareBtn"><i class="fa fa-share" aria-hidden="true" style="color:#105c92;"></i></a>
+
+    </div>
+
+
+    <script>
+document.getElementById('shareBtn').addEventListener('click', function() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            text: '¡Echa un vistazo a mis Servicios Profesionales!',
+            url: window.location.href
+        })
+        .then(() => console.log('Enlace compartido con éxito.'))
+        .catch((error) => console.error('Error al compartir:', error));
+    } else {
+        // Fallback para navegadores que no admiten la API de Web Share
+        alert('La función de compartir no está disponible en este navegador.');
+    }
+});
+</script>
+
+</body>
+</html>

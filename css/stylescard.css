@@ -1,0 +1,105 @@
+/* CARD PAGINAS */
+
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 20px; /* Ajuste de margen lateral */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Nuevo margen inferior */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #752648;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #592138;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .card {
+        margin-bottom: 10px; /* Ajuste de margen inferior para pantallas más pequeñas */
+    }
+
+    .card img {
+        height: 150px;
+    }
+}
+
+a button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #752648;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a button:hover {
+    background-color: #592138;
+}
