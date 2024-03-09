@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #000000;
+    background-color: #2e2e2e;
 }
 
 .card-section {
@@ -102,4 +102,59 @@ a button {
 
 a button:hover {
     background-color: #bba10c;
+}
+
+
+
+.card-form {
+  background-color: #ccc;  /* Set a background color */
+  border-radius: 20px;     /* Round the corners */
+  padding: 20px;          /* Add padding for content spacing */
+  margin: 20px auto;      /* Center the card horizontally */
+  width: 60%;             /* Set a preferred width */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.card-form button {
+  background-color: #ffd908;  /* Green background for button */
+  color: #121212;             /* White text color */
+  border: none;             /* Remove default border */
+  padding: 10px 20px;       /* Add padding for button size */
+  text-align: center;       /* Center button text */
+  text-decoration: none;    /* Remove default underline */
+  display: inline-block;    /* Set button as inline-block for proper styling */
+  font-size: 16px;          /* Set font size */
+  border-radius: 5px;       /* Round button corners */
+  cursor: pointer;          /* Set hover cursor appearance */
+}
+
+.card-form button:hover {
+  background-color: #45a049;  /* Slightly darker green on hover */
+}
+
+/* Optional: Adjust spacing for button placement */
+.card-form a {
+  margin-top: 15px; /* Add spacing before button */
+}
+
+/* Media queries for smaller screens (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  .card-form {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Optional media queries for even smaller screens (adjust breakpoints as needed) */
+@media (max-width: 480px) {
+  .card-form {
+    width: 100%; /* Make form full width on very small screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+  .card-form button {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
 }

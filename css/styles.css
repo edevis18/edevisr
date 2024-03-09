@@ -58,3 +58,22 @@ font-size: 20px;
 }
 
 
+.redes-sociales{
+
+background: #fff;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.redes-sociales a {
+margin: 0 5px; /* Add spacing between icons */
+}
+
+.redes-sociales i {
+color: #2e2e2e;
+font-size: 25px;
+
+}
