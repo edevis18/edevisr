@@ -3,7 +3,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     const formData = new FormData(this);
 
-    fetch('php/process.php', {
+    fetch('http://miempresa.wuaze.com/php/process.php', {
         method: 'POST',
         body: formData
     })
