@@ -11,18 +11,33 @@
 
 
 <div class="card-form">
-	
-<!-- form.123formbuilder.com script begins here -->
-<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6608356.js" data-role="form" data-default-width="800px" data-custom-vars="hasEmbedFormStyle=1"></script><br>
-<!-- form.123formbuilder.com script ends here -->
-
-<a href="index.html"><button>Volver al Menu</button></a><br>
+<center><h1>Contáctame 😎</h1></center>
+<div class="contact-form">
+        <form id="contactForm">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+            <input type="text" id="pais" name="pais" placeholder="País" required>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+            <select id="tipoSolicitud" name="tipoSolicitud" required>
+                <option value="" disabled selected>Tipo de Solicitud</option>
+                <option value="consulta">Consulta</option>
+                <option value="presupuesto">Presupuesto</option>
+                <option value="sugerencia">Sugerencia</option>
+            </select>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+         <a href="index.html"><button>Volver al Menu</button></a><br>
+    </div>
 
 </div>
 
 
+<script src="js/form.js"></script>
 
-
-
-    </body>
+</body>
 </html>

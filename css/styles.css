@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #2e2e2e;
+    background-color: #1a1d1e;
 }
 
 .card {
@@ -15,6 +15,8 @@ body {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 10px;
 }
 
 .profile-picture {
@@ -43,7 +45,7 @@ font-size: 20px;
 
 .buttons a {
     display: block;
-    background-color: #414141;
+    background-color: #1a1d1e;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -53,8 +55,8 @@ font-size: 20px;
 }
 
 .buttons a:hover {
-    background-color: #ffda08;
-    color: black;
+    background-color: #a309fc;
+    color: white;
 }
 
 
@@ -75,5 +77,9 @@ margin: 0 5px; /* Add spacing between icons */
 .redes-sociales i {
 color: #2e2e2e;
 font-size: 25px;
+transition:color 0.3s ease;
+}
 
+.redes-sociales i:hover{
+color:#a309fc;
 }
